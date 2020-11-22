@@ -54,8 +54,8 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
 
-echo "ro.potato.device=$POTATO_DEVICE"
+echo "ro.descendant.device=$DESCENDANT_DEVICE"
 
 echo "# end build properties"
 
-VEN_INFO=vendor/potato/build/tools/buildinfo.sh && test -f $VEN_INFO && source $VEN_INFO
+VEN_INFO=vendor/descendant/build/tools/buildinfo.sh && test -f $VEN_INFO && source $VEN_INFO
